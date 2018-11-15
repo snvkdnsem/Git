@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    body {
+      background-color: green;
+    }
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: silver;
+    }
+  </style>
+</head>
+
+<!-- body 영역의 높이는 콘텐츠까지만, 가로로는 쭉 -->
+<body onclick="clickBody()">
+
+<!-- body가 부모이고 div가 자식이다. 즉, div영역을 클릭하면 div부터 출력되고 이후에 body영역이 출력된다.(자식부터 출력) -->
+  <div onclick="clickDiv(event)"></div>
+
+  <script type="text/javascript">
+    function clickBody() {
+      alert('clickBody');
+    }
+    function clickDiv(e) {
+      console.log(e);
+      alert('clickDiv');
+      e.stopPropagation();
+    }
+  </script>
+
+</body>
+
+</html>

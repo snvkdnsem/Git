@@ -1,0 +1,18 @@
+{
+  "name": "book",
+  "version": "1.0.0",
+  "main": "HOT.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "lodash": "^4.17.11",
+    "moment-timezone": "^0.5.21"
+  },
+  "devDependencies": {},
+  "description": ""
+}
